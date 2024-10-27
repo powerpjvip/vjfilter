@@ -127,7 +127,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://autofilter-ja0t.onrender.com/")
+URL = environ.get("URL", "https://tragic-rozanna-powerpj-567f16e7.koyeb.app/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
