@@ -69,17 +69,17 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+8kb0jWEQfmQxYWI9')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/gpsccrackzone')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_To_Open_Linkl')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_To_Open_Linkl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+8kb0jWEQfmQxYWI9') # Support Chat Link Without https:// or @
 
 # True Or False
-PM_SEARCH = bool(environ.get('PM_SEARCH', True))
+PM_SEARCH = bool(environ.get('PM_SEARCH', False))
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 VERIFY = bool(environ.get('VERIFY', False))
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
@@ -93,7 +93,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Shortlink Info
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '3206b86dfacabd77d0181a7d8aa9e015ca491e4d')
+SHORTLINK_API = environ.get('SHORTLINK_API', '8b4e05664e5c272f617366e8b7fd1ddeaf3c8f72')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -127,14 +127,14 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://tragic-rozanna-powerpj-567f16e7.koyeb.app/")
+URL = environ.get("URL", "http://104.131.188.47/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
 RENAME_MODE = bool(environ.get('RENAME_MODE', True)) # Set True or Flase
 
 # Auto Approve Info : If True Then Bot Approve New Upcoming Join Request Else Not
-AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', True)) # Set True or Flase
+AUTO_APPROVE_MODE = bool(environ.get('AUTO_APPROVE_MODE', False)) # Set True or Flase
 
 # Save Restricted Info : If True Then Bot Save Content From Restricted Channel Else Not
 SAVE_RESTRICTED_MODE = bool(environ.get('SAVE_RESTRICTED_MODE', True)) # Set True or Flase
