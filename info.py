@@ -127,7 +127,12 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://secret-correna-powerpj-9b56f627.koyeb.app/")
+
+BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+FQDN = str(getenv('104.131.188.47', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://{}/".format(FQDN, PORT)
+#URL = environ.get("URL", "https://secret-correna-powerpj-9b56f627.koyeb.app/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
